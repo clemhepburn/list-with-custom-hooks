@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const Villager = ({ japaneseName, image, phrase, _id }) => (
+const Villager = ({
+  japaneseName,
+  image,
+  phrase,
+  _id }) => (
   <figure>
     <a href={`/villagers/${_id}`}>
       <img style={{ width: '100px' }} src={image} alt={japaneseName} />
